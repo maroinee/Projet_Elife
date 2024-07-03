@@ -1,0 +1,32 @@
+<div *ngIf="!isDonneurLoggedIn && !isHopitalLoggedIn && !isAssociationLoggedIn && !isBankSangLoggedIn">
+  <nz-header class="main-header" nz-row nzType="flex">
+    <div class="logo-container">
+      <img class="logo" src="../assets/logo.png" alt="Logo">
+      <span class="logo-text">DimaDon</span>
+    </div>
+  
+    <div class="nav-links">
+      <a nz-button nzType="link" routerLink="/acceuill" routerLinkActive="active">Home</a>
+      <a nz-button nzType="link" routerLink="/login" routerLinkActive="active">Sign In</a>
+      <a nz-button nzType="link" routerLink="/signup" routerLinkActive="active">Sign Up</a>
+    </div>
+  </nz-header>
+</div>
+
+<!-- Donneur Section -->
+<div *ngIf="isDonneurLoggedIn">
+  <nz-header class="main-header" nz-row nzType="flex" style="background-color: #bb1111;">
+    <div>
+      <h2 style="color: white; padding-left: 10px;">DimaDon</h2>
+    </div>
+    <div class="nav-links">
+      <a nz-button nzType="link" routerLink="/create-post" routerLinkActive="active">Create New Post</a>
+      <a nz-button nzType="link" routerLink="/view-al" routerLinkActive="active">View All Posts</a>
+      <a nz-button nzType="link" routerLink="/search" routerLinkActive="active">Search</a>
+      <a nz-button nzType="link" (click)="logout()" routerLinkActive="active">Logout</a>
+    </div>
+  </nz-header>
+  
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,15 @@
+.icon-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecedf3; /* Couleur de fond indigo */
+    padding: 8px; /* Espace intérieur */
+    border-radius: 50%; /* Pour rendre les coins arrondis */
+    width: 40px; /* Largeur de l'icône */
+    height: 40px; /* Hauteur de l'icône */
+}
+
+.icon {
+    width: 24px; /* Ajuster la taille de l'image */
+    height: 24px; /* Ajuster la taille de l'image */
+}

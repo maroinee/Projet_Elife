@@ -1,0 +1,70 @@
+// Styles pour la section de visualisation des posts
+.post-container {
+    .card-container {
+      animation: fadeInUp 0.5s ease; // Animation d'entrée
+  
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+  
+      .bg-white {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+  
+        h2 {
+          font-size: 1.75rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+          color: #333333;
+        }
+  
+        p {
+          color: #555555;
+          margin-bottom: 1rem;
+        }
+  
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+          margin-bottom: 1rem;
+        }
+  
+        .text-gray-700 {
+          margin-bottom: 1rem;
+        }
+  
+        hr {
+          margin: 1rem 0;
+          border-color: #ddd;
+        }
+  
+        .flex {
+          justify-content: space-between;
+  
+          button, a {
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+  
+            &:hover {
+              background-color: #3182ce;
+            }
+  
+            .text-lg {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
