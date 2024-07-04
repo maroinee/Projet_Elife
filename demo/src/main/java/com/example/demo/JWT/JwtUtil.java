@@ -18,6 +18,7 @@ import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 
 @Component
+@Deprecated
 public class JwtUtil {
 
     public static final String SECRET = "404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970";

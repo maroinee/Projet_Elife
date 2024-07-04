@@ -35,9 +35,9 @@ export class LoginComponent implements OnInit {
       this.router.navigateByUrl('/create-post')
     }else if (UserStorageService.isHopitalLoggedIn) {
       this.router.navigateByUrl('/hopital-dashboard')
-    }else if (UserStorageService.isHopitalLoggedIn) {
+    }else if (UserStorageService.isAssociationLoggedIn) {
       this.router.navigateByUrl('/association-dashboard')
-    }else if (UserStorageService.isHopitalLoggedIn) {
+    }else if (UserStorageService.isBankSangLoggedIn) {
       this.router.navigateByUrl('/bank-sang-dashboard')
     }
    }, error =>{
