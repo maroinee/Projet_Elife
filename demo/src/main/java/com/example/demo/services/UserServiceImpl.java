@@ -36,10 +36,7 @@ public User updateUser(Long id, User userUpdates) {
         existingUser.setLastName(userUpdates.getLastName());
         existingUser.setLieux(userUpdates.getLieux());
         existingUser.setGroupSang(userUpdates.getGroupSang());
-       // existingUser.setCin(userUpdates.getCin());
         existingUser.setTelephone(userUpdates.getTelephone());
-       // existingUser.setSexe(userUpdates.getSexe());
-       // existingUser.setDateBirthday(userUpdates.getDateBirthday());
         return userRepository.save(existingUser);
     } else {
         throw new RuntimeException("Utilisateur non trouvé avec l'ID : " + id);

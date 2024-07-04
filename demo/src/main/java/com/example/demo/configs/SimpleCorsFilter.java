@@ -24,7 +24,7 @@ public class SimpleCorsFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        // Initialisation si nécessaire
+       
     }
 
     @Override
@@ -35,7 +35,7 @@ public class SimpleCorsFilter implements Filter {
 
         String originHeader = request.getHeader("Origin");
         
-        // Check if the origin is allowed
+        
         if (originHeader != null && originHeader.equals(donneurAppUrl)) {
             response.setHeader("Access-Control-Allow-Origin", originHeader);
         } else {
@@ -56,6 +56,6 @@ public class SimpleCorsFilter implements Filter {
 
     @Override
     public void destroy() {
-        // Nettoyage si nécessaire
+       
     }
 }

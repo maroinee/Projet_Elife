@@ -25,13 +25,12 @@ public class CommentairePost {
     private Date createdAt;
 
     @Temporal(TemporalType.TIMESTAMP)
-    private Date updatedAt; // Ajout du champ updatedAt
+    private Date updatedAt; 
 
     @ManyToOne
     @JoinColumn(name = "post_id", nullable = false)
     private PostUser post;
 
-    // Méthodes getter et setter pour updatedAt
     public Date getUpdatedAt() {
         return updatedAt;
     }

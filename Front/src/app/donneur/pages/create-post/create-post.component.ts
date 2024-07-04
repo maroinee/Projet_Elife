@@ -23,7 +23,6 @@ export class CreatePostComponent implements OnInit {
   }
 
   ngOnInit() {
-    // Vous pouvez écouter les changements dans les champs du formulaire si nécessaire
     this.postForm.valueChanges.subscribe((value) => {
       console.log('Form value changed:', value);
     });
@@ -34,7 +33,7 @@ export class CreatePostComponent implements OnInit {
       const formData = this.postForm.value;
   
       const newPost: PostUser = {
-        id: 0, // ou null, selon ce que votre backend attend
+        id: 0, 
         name: formData.name,
         content: formData.content,
         lieux: formData.lieux,

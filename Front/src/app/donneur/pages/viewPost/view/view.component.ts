@@ -27,7 +27,7 @@ export class ViewComponent implements OnInit {
     private authService: AuthService,
     private postService:  Post 
   ) {
-    this.postId = +this.activatedRoute.snapshot.params['id']; // Assurez-vous que postId est un nombre
+    this.postId = +this.activatedRoute.snapshot.params['id']; 
     this.commentForm = this.fb.group({
       postedBy: [{ value: '', disabled: true }, Validators.required],
       content: ['', Validators.required]

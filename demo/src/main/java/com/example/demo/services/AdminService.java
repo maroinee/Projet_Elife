@@ -14,7 +14,7 @@ public interface AdminService {
     Admin postAdmin(Admin admin);
     void deleteAdmin(Long id);
     Admin updateAdmin(Long id, Admin adminUpdates);
-    List<Admin> getAllAdmins(); // Added method to get all admins
+    List<Admin> getAllAdmins(); 
     Optional<User> getUser(Long id);
     User postUser(User user);
     User updateUser(Long id, User userUpdates);

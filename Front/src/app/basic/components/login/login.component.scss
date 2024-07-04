@@ -6,14 +6,13 @@
    align-items: center;
    height: 100vh;
    position: relative;
-   z-index: 1; /* Assure que le conteneur est au-dessus du canevas */
+   z-index: 1; 
 }
 
-/* Style pour le conteneur principal du formulaire */
 .section {
-   background-color: #ffffff; /* Couleur de fond */
-   border-radius: 10px; /* Coins arrondis */
-   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+   background-color: #ffffff; 
+   border-radius: 10px; 
+   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
    text-align: center;
    padding: 40px;
    max-width: 400px;
@@ -21,18 +20,17 @@
    min-height: 400px;
 }
 
-/* Style pour le titre "Login" */
+
 h1 {
    font-size: 24px;
    color: #333;
-   margin-bottom: 20px; /* Espacement en bas */
-   text-align: center; /* Centrage horizontal du texte */
+   margin-bottom: 20px;
+   text-align: center; 
 }
 
-/* Style pour le formulaire */
 .login-form {
-   max-width: 300px; /* Largeur maximale du formulaire */
-   margin: 0 auto; /* Centrage horizontal */
+   max-width: 300px; 
+   margin: 0 auto; 
 }
 
 /* Style pour l'espacement entre les éléments du formulaire */

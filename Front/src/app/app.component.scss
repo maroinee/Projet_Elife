@@ -17,7 +17,7 @@ $nav-item-spacing: 20px;
     align-items: center;
     
     .logo {
-      width: 65px; /* Ajuster la taille du logo si nécessaire */
+      width: 65px; 
       height: 50px;
       background-color: $white;
       border-radius: 50%;
@@ -25,10 +25,10 @@ $nav-item-spacing: 20px;
     }
 
     .logo-text {
-      margin-left: 8px; /* Espace entre le logo et le texte */
-      color: $white; /* Couleur du texte */
-      font-size: 20px; /* Taille du texte */
-      font-weight: bold; /* Style de police */
+      margin-left: 8px; 
+      color: $white; 
+      font-size: 20px; 
+      font-weight: bold; 
     }
   }
 

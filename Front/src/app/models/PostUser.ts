@@ -5,9 +5,9 @@ export interface PostUser {
   date: Date;
   lieux: string;
   content: string;
-  tags: any[]; // Définir correctement le type des tags si nécessaire
-  img?: string; // Ajouter d'autres propriétés au besoin
+  tags: any[]; 
+  img?: string; 
   likeCount: number;
   viewCount: number;
-  email: string; // Ajouter la propriété email
+  email: string; 
 }

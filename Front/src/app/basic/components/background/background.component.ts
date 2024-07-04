@@ -9,8 +9,8 @@ export class BackgroundComponent implements OnInit, AfterViewInit {
   canvas: HTMLCanvasElement;
   ctx: CanvasRenderingContext2D;
   NUM_PARTICLES = 600;
-  PARTICLE_SIZE = 0.5; // View heights
-  SPEED = 20000; // Milliseconds
+  PARTICLE_SIZE = 0.5; 
+  SPEED = 20000; 
   particles = [];
 
   ngOnInit(): void {}

@@ -18,8 +18,7 @@ import { SignupDonneurComponent } from './basic/components/signup-donneur/signup
 import { SignupHopitalComponent } from './basic/components/signup-hopital/signup-hopital.component';
 import { SignupAssociationComponent } from './basic/components/signup-association/signup-association.component';
 import { SignupBankSangComponent } from './basic/components/signup-bank-sang/signup-bank-sang.component';
-//import { ViewComponent } from './donneur/pages/viewPost/view/view.component';
-//import { ViewAlComponent } from './donneur/pages/viewAll/view-al/view-al.component';
+
 import { RouterModule } from '@angular/router';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HomeComponent } from './basic/components/home/home.component';
@@ -69,8 +68,7 @@ registerLocaleData(en);
     TeamComponent,
     BloodComponent,
     
-    //ViewComponent,
-    //ViewAlComponent
+  
   ],
   imports: [
     BrowserModule,

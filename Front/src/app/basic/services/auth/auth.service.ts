@@ -34,10 +34,10 @@ export class AuthService {
   registerBankSang(signupRequestDTO: any): Observable<any> {
     return this.http.post(BASIC_URL + "bankSang/sign-up", signupRequestDTO);
   }
-  // Méthode pour récupérer l'utilisateur actuel (exemple d'implémentation)
+ 
   getCurrentUser(): Observable<any> {
-    // Exemple : Supposons que vous ayez un point de terminaison pour récupérer les détails de l'utilisateur actuel
-    const url = `${this.baseUrl}/current-user`; // Adapter selon votre API backend
+   
+    const url = `${this.baseUrl}/current-user`; 
     return this.http.get<any>(url)
       .pipe(
         catchError(this.handleError)
@@ -45,10 +45,10 @@ export class AuthService {
   }
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
-      // Erreur côté client
+     
       console.error('Une erreur est survenue :', error.error.message);
     } else {
-      // Erreur côté serveur
+     
       console.error(`Code d'erreur : ${error.status}, ` + `Message : ${error.message}`);
     }
     return throwError('Quelque chose s\'est mal passé; veuillez réessayer plus tard.');

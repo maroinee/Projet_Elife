@@ -48,7 +48,7 @@ public class AdminController {
         }
     }
 
-    // Use service method instead of direct repository access
+    
     @GetMapping("/debug/admins")
     public ResponseEntity<List<Admin>> listAllAdmins() {
         return ResponseEntity.ok(adminService.getAllAdmins());
